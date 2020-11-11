@@ -1,0 +1,19 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Home controller api",
+        "version": "0.1"
+    },
+    "paths": {
+        "/api/hey": {
+            "get": {
+                "operationId": "App\\Http\\Controllers\\homeController::hey",
+                "responses": {
+                    "200": {
+                        "description": "An example resource"
+                    }
+                }
+            }
+        }
+    }
+}

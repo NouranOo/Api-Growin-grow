@@ -1,0 +1,112 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Home controller api",
+        "version": "0.1"
+    },
+    "paths": {
+        "/index": {
+            "get": {
+                "summary": "say hello for user by id",
+                "operationId": "App\\Http\\Controllers\\HomeController::sayHay",
+                "responses": {
+                    "200": {
+                        "description": "hey "
+                    }
+                }
+            }
+        },
+        "/Api/Register": {
+            "post": {
+                "summary": "Pharmacy Register",
+                "operationId": "App\\Http\\Controllers\\PharmacyController::Register",
+                "parameters": [
+                    {
+                        "name": "hossam",
+                        "in": "path",
+                        "description": "ID of pet that needs to be fetched",
+                        "required": true,
+                        "schema": "object"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Pharmacy Created Successfully "
+                    },
+                    "402": {
+                        "description": "an \"missing\" fields"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "pharmacy": {
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "pharmacy_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "password": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "email": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "pharmacy_address": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "pharmacy_license": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "union_licences": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "commerical_registeraion": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "Token": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "owner_name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "available_time": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "ApiToken": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "region": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "branch_number": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "area_id": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                },
+                "type": "object"
+            }
+        }
+    }
+}

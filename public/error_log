@@ -1,0 +1,1 @@
+[10-Sep-2018 14:20:41 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\PharmacyController::cites() in /home/grow/api.growingrow.com/app/Http/Controllers/PharmacyController.php on line 615
